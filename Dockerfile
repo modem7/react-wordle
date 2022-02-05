@@ -5,7 +5,7 @@ RUN apk update && \
     wget && \
     rm -rf /var/cache/apk/* && rm -rf /tmp/*
 
-RUN mkdir /wordle && cd /wordle && wget -v -m https://www.powerlanguage.co.uk/wordle/
+RUN mkdir /wordle && cd /wordle && wget -nv -m https://www.powerlanguage.co.uk/wordle/
 
 RUN cp -R /wordle/www.powerlanguage.co.uk/wordle/. /usr/share/nginx/html/
 COPY conf/nginx-site.conf /etc/nginx/conf.d/default.conf
