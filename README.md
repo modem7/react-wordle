@@ -9,7 +9,7 @@ More info can be found here: https://www.powerlanguage.co.uk/wordle/
 Image is based on Nginx stable alpine, and all the content is local to the container.
 
 # Container Screenshot
-![image](https://user-images.githubusercontent.com/4349962/128192966-26c74fd7-839c-49ce-b00f-af1050aece90.png)
+![image](![image](https://user-images.githubusercontent.com/4349962/152651540-821b7b52-aab1-4d24-a0d3-031a9408f11c.png))
 
 
 # Configuration
@@ -20,8 +20,8 @@ version: "2.4"
 services:
 
   starwars:
-    image: modem7/docker-starwars
-    container_name: StarWars
+    image: modem7/wordle
+    container_name: Wordle
     ports:
       - 80:80
 ```
