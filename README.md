@@ -9,7 +9,7 @@ More info can be found here: https://www.powerlanguage.co.uk/wordle/
 Image is based on Nginx stable alpine, and all the content is local to the container.
 
 # Container Screenshot
-![image](![image](https://user-images.githubusercontent.com/4349962/152651540-821b7b52-aab1-4d24-a0d3-031a9408f11c.png))
+![image](https://user-images.githubusercontent.com/4349962/152651710-32fc8be9-b63a-47b3-b1f3-ec7baf0e34f8.png)
 
 
 # Configuration
