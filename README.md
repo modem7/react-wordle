@@ -19,7 +19,7 @@ version: "2.4"
 
 services:
 
-  starwars:
+  wordle:
     image: modem7/wordle
     container_name: Wordle
     ports:
