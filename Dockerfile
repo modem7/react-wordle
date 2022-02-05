@@ -1,19 +1,7 @@
-FROM nginx:1.21.5-alpine as build
-
-RUN apk update && \
-    apk add --no-cache \ 
-    wget && \
-    rm -rf /var/cache/apk/* && rm -rf /tmp/*
-
-RUN mkdir /wordle && cd /wordle && wget -nv -m https://www.powerlanguage.co.uk/wordle/
-
-RUN cp -R /wordle/www.powerlanguage.co.uk/wordle/. /usr/share/nginx/html/
-COPY conf/nginx-site.conf /etc/nginx/conf.d/default.conf
-
 FROM nginx:1.21.5-alpine
 
-COPY --from=build /usr/share/nginx/html/ /usr/share/nginx/html/
-COPY --from=build /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
+COPY src/ /usr/share/nginx/html/
+COPY conf/nginx-site.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80 8080
 
