@@ -41,6 +41,7 @@ Open [http://localhost:3000](http://localhost:3000) in browser.
 - [Szózat](https://szozat.miklosdanka.com/): Hungarian
 - [Pashtoodle](https://pashtoodle.lingdocs.com): Pashto
 - [Malay](https://malay-wordle.netlify.app/): Bahasa Malaysia
+- [Слівце](https://slivce.com/): Ukrainian
 
 ### Fun themes
 
