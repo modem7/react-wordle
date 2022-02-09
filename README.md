@@ -29,11 +29,12 @@ Open [http://localhost:3000](http://localhost:3000) in browser.
 
 ### Other languages
 
+- [Wortel](https://wortel.wrintiewaar.co.za): Afrikaans
 - [Latindictionary.io](https://wordle.latindictionary.io/): Latin
 - [Kelmaly](https://kelmaly.com/): Arabic
 - [Arwordle](https://arwordle.netlify.app/): Arabic
 - [Wörtchen](https://woertchen.sofacoach.de): German
-- [Vārdulis](wordle.lielakeda.lv/): Latvian
+- [Vārdulis](https://wordle.lielakeda.lv/): Latvian
 - [꼬들 - 한국어](https://belorin.github.io/): Korean
 - [한글 풀어쓰기 5자](https://nakosung.github.io/wordle/): Korean
 - [Urdle](https://urdle.chaoticity.com/): Urdu
@@ -41,6 +42,8 @@ Open [http://localhost:3000](http://localhost:3000) in browser.
 - [Szózat](https://szozat.miklosdanka.com/): Hungarian
 - [Pashtoodle](https://pashtoodle.lingdocs.com): Pashto
 - [Malay](https://malay-wordle.netlify.app/): Bahasa Malaysia
+- [ਪੰਜਾਬੀ](https://punjabipuzzle.netlify.app/): Punjabi
+- [Слівце](https://slivce.com/): Ukrainian
 
 ### Fun themes
 
@@ -52,7 +55,7 @@ Open [http://localhost:3000](http://localhost:3000) in browser.
 - [Airportle](https://airportle.scottscheapflights.com/): Airport Codes
 - [Mahjong Handle](https://mahjong-handle.update.sh/): Mahjong Hands
 - ['en si lì'ur](https://tirea.learnnavi.org/wordle): Na'vi, the constructed language from James Cameron's AVATAR (2009)
-- [Wordle.cl](wordle.cl): Chilean modisms, cities, places
+- [Wordle.cl](https://www.wordle.cl): Chilean modisms, cities, places
 - [Anidal](https://anidal-abrarhayat.web.app/): Animals
 
 ### Math, Acronyms, Science, Tech, and more

@@ -27,6 +27,7 @@ import {
   MAX_CHALLENGES,
   ALERT_TIME_MS,
   REVEAL_TIME_MS,
+  GAME_LOST_INFO_DELAY,
 } from './constants/settings'
 import {
   isWordInWordList,
@@ -129,7 +130,7 @@ function App() {
     if (isGameLost) {
       setTimeout(() => {
         setIsStatsModalOpen(true)
-      }, ALERT_TIME_MS)
+      }, GAME_LOST_INFO_DELAY)
     }
   }, [isGameWon, isGameLost])
 
@@ -208,7 +209,7 @@ function App() {
 
   return (
     <div className="pt-2 pb-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
-      <div className="flex w-80 mx-auto items-center mb-8 mt-4">
+      <div className="flex w-80 mx-auto items-center mb-8 mt-20">
         <h1 className="text-xl ml-2.5 grow font-bold dark:text-white">
           {GAME_TITLE}
         </h1>
@@ -291,7 +292,7 @@ function App() {
         isOpen={isWordNotFoundAlertOpen}
       />
       <Alert message={missingLetterMessage} isOpen={isMissingPreviousLetters} />
-      <Alert message={CORRECT_WORD_MESSAGE(solution)} isOpen={isGameLost} />
+      <Alert message={CORRECT_WORD_MESSAGE(solution)} isOpen={isGameLost && !isRevealing} />
       <Alert
         message={successAlert}
         isOpen={successAlert !== ''}
