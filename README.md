@@ -29,6 +29,7 @@ Open [http://localhost:3000](http://localhost:3000) in browser.
 
 ### Other languages
 
+- [Wortel](https://wortel.wrintiewaar.co.za): Afrikaans
 - [Latindictionary.io](https://wordle.latindictionary.io/): Latin
 - [Kelmaly](https://kelmaly.com/): Arabic
 - [Arwordle](https://arwordle.netlify.app/): Arabic
@@ -42,6 +43,7 @@ Open [http://localhost:3000](http://localhost:3000) in browser.
 - [Pashtoodle](https://pashtoodle.lingdocs.com): Pashto
 - [Malay](https://malay-wordle.netlify.app/): Bahasa Malaysia
 - [ਪੰਜਾਬੀ](https://punjabipuzzle.netlify.app/): Punjabi
+- [Слівце](https://slivce.com/): Ukrainian
 
 ### Fun themes
 
