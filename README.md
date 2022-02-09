@@ -29,6 +29,7 @@ Open [http://localhost:3000](http://localhost:3000) in browser.
 
 ### Other languages
 
+- [Wortel](https://wortel.wrintiewaar.co.za): Afrikaans
 - [Latindictionary.io](https://wordle.latindictionary.io/): Latin
 - [Kelmaly](https://kelmaly.com/): Arabic
 - [Arwordle](https://arwordle.netlify.app/): Arabic
