@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --animation-speed: 1000ms;
+  --animation-speed-fast: 500ms;
+}
+
 .cell-fill-animation {
   animation: onTypeCell linear;
   animation-duration: 0.35s;
@@ -28,6 +33,21 @@
 .cell-reveal > .letter-container {
   animation: offsetLetterFlip 0.35s linear;
   animation-fill-mode: backwards;
+}
+
+svg:hover {
+  animation: float infinite;
+  animation-duration: var(--animation-speed);
+}
+
+.sun:hover {
+  animation: rotate linear;
+  animation-duration: var(--animation-speed-fast);
+}
+
+.moon:hover {
+  animation: swivel linear;
+  animation-duration: var(--animation-speed);
 }
 
 @keyframes revealAbsentCharCell {
@@ -95,4 +115,37 @@
 
 .shadowed {
   text-shadow: 1px 1px 1px #000000;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes swivel {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transition: rotate(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -0.5rem);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
