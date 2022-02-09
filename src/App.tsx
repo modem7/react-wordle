@@ -292,7 +292,10 @@ function App() {
         isOpen={isWordNotFoundAlertOpen}
       />
       <Alert message={missingLetterMessage} isOpen={isMissingPreviousLetters} />
-      <Alert message={CORRECT_WORD_MESSAGE(solution)} isOpen={isGameLost && !isRevealing} />
+      <Alert
+        message={CORRECT_WORD_MESSAGE(solution)}
+        isOpen={isGameLost && !isRevealing}
+      />
       <Alert
         message={successAlert}
         isOpen={successAlert !== ''}
