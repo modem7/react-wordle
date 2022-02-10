@@ -1,6 +1,6 @@
 {
-  "short_name": "%REACT_APP_GAME_NAME%",
-  "name": "%REACT_APP_GAME_NAME_LONG%",
+  "short_name": "Game",
+  "name": "Game",
   "icons": [
     {
       "src": "favicon.ico",
