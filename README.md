@@ -44,6 +44,7 @@ Open [http://localhost:3000](http://localhost:3000) in browser.
 - [Malay](https://malay-wordle.netlify.app/): Bahasa Malaysia
 - [ਪੰਜਾਬੀ](https://punjabipuzzle.netlify.app/): Punjabi
 - [Слівце](https://slivce.com/): Ukrainian
+- [Rudle](https://rudle.vercel.app): Russian
 
 ### Fun themes
 
