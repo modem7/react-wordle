@@ -81,8 +81,10 @@ _Want to add one to the list? Just make a pull request or [let us know via a com
 
 ### How can I create a version in another language?
 
+- In [.env](.env):
+  - Update the title and the description
 - In [public/index.html](public/index.html):
-  - Update the title, the description, and the "You need to enable JavaScript" message
+  - Update the "You need to enable JavaScript" message
   - Update the language attribute in the HTML tag
   - If the language is written right-to-left, add `dir="rtl"` to the HTML tag
 - Update the name and short name in [public/manifest.json](public/manifest.json)
