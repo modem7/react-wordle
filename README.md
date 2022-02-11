@@ -45,6 +45,7 @@ Open [http://localhost:3000](http://localhost:3000) in browser.
 - [ਪੰਜਾਬੀ](https://punjabipuzzle.netlify.app/): Punjabi
 - [Слівце](https://slivce.com/): Ukrainian
 - [Rudle](https://rudle.vercel.app): Russian
+- [Keclap](https://keclap.xyz/): Sundanese
 
 ### Fun themes
 
