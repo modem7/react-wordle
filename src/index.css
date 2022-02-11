@@ -45,16 +45,6 @@ svg:hover {
   animation-duration: var(--animation-speed);
 }
 
-.sun:hover {
-  animation: rotate linear;
-  animation-duration: var(--animation-speed-fast);
-}
-
-.moon:hover {
-  animation: swivel linear;
-  animation-duration: var(--animation-speed);
-}
-
 @keyframes revealAbsentCharCell {
   0% {
     transform: rotateX(0deg);
@@ -120,27 +110,6 @@ svg:hover {
 
 .shadowed {
   text-shadow: 1px 1px 1px #000000;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes swivel {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-45deg);
-  }
-  100% {
-    transition: rotate(0);
-  }
 }
 
 @keyframes float {
