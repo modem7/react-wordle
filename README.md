@@ -29,11 +29,12 @@ Open [http://localhost:3000](http://localhost:3000) in browser.
 
 ### Other languages
 
+- [Wortel](https://wortel.wrintiewaar.co.za): Afrikaans
 - [Latindictionary.io](https://wordle.latindictionary.io/): Latin
 - [Kelmaly](https://kelmaly.com/): Arabic
 - [Arwordle](https://arwordle.netlify.app/): Arabic
 - [Wörtchen](https://woertchen.sofacoach.de): German
-- [Vārdulis](wordle.lielakeda.lv/): Latvian
+- [Vārdulis](https://wordle.lielakeda.lv/): Latvian
 - [꼬들 - 한국어](https://belorin.github.io/): Korean
 - [한글 풀어쓰기 5자](https://nakosung.github.io/wordle/): Korean
 - [Urdle](https://urdle.chaoticity.com/): Urdu
@@ -41,6 +42,10 @@ Open [http://localhost:3000](http://localhost:3000) in browser.
 - [Szózat](https://szozat.miklosdanka.com/): Hungarian
 - [Pashtoodle](https://pashtoodle.lingdocs.com): Pashto
 - [Malay](https://malay-wordle.netlify.app/): Bahasa Malaysia
+- [ਪੰਜਾਬੀ](https://punjabipuzzle.netlify.app/): Punjabi
+- [Слівце](https://slivce.com/): Ukrainian
+- [Rudle](https://rudle.vercel.app): Russian
+- [Keclap](https://keclap.xyz/): Sundanese
 
 ### Fun themes
 
@@ -52,8 +57,9 @@ Open [http://localhost:3000](http://localhost:3000) in browser.
 - [Airportle](https://airportle.scottscheapflights.com/): Airport Codes
 - [Mahjong Handle](https://mahjong-handle.update.sh/): Mahjong Hands
 - ['en si lì'ur](https://tirea.learnnavi.org/wordle): Na'vi, the constructed language from James Cameron's AVATAR (2009)
-- [Wordle.cl](wordle.cl): Chilean modisms, cities, places
+- [Wordle.cl](https://www.wordle.cl): Chilean modisms, cities, places
 - [Anidal](https://anidal-abrarhayat.web.app/): Animals
+- [FFXIVrdle](https://ffxivrdle.com/): Final Fantasy XIV
 
 ### Math, Acronyms, Science, Tech, and more
 
@@ -86,7 +92,7 @@ _Want to add one to the list? Just make a pull request or [let us know via a com
 - Update the strings in [src/constants/strings.ts](src/constants/strings.ts)
 - Add all of the five letter words in the language to [src/constants/validGuesses.ts](src/constants/validGuesses.ts), replacing the English words
 - Add a list of goal words in the language to [src/constants/wordlist.ts](src/constants/wordlist.ts), replacing the English words
-- Update the "About" modal in [src/components/modals/AboutModel.tsx](src/components/modals/AboutModel.tsx)
+- Update the "About" modal in [src/components/modals/AboutModal.tsx](src/components/modals/AboutModal.tsx)
 - Update the "Info" modal in [src/components/modals/InfoModal.tsx](src/components/modals/InfoModal.tsx)
 - If the language has letters that are not present in English update the keyboard in [src/components/keyboard/Keyboard.tsx](src/components/keyboard/Keyboard.tsx)
 - If the language's letters are made of multiple unicode characters, use a grapheme splitter at various points throughout the app or normalize the input so that all of the letters are made of a single character
