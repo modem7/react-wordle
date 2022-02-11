@@ -4,7 +4,7 @@
 
 :root {
   --animation-speed: 1000ms;
-  --animation-speed-fast: 500ms;
+  --animation-speed-fast: 250ms;
   --default-cell-bg-color: theme('colors.white');
   --default-cell-border-color: theme('colors.black');
   --default-cell-text-color: theme('colors.black');
@@ -49,6 +49,11 @@
 svg:hover {
   animation: float infinite;
   animation-duration: var(--animation-speed);
+}
+
+.jiggle {
+  animation: jiggle linear;
+  animation-duration: var(--animation-speed-fast);
 }
 
 @keyframes revealAbsentCharCell {
@@ -127,6 +132,24 @@ svg:hover {
   }
   50% {
     transform: translate(0, -0.5rem);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes jiggle {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-0.5rem, 0);
+  }
+  50% {
+    transform: translate(0.5rem, 0);
+  }
+  75% {
+    transform: translate(-0.5rem, 0);
   }
   100% {
     transform: translate(0, 0);
