@@ -99,3 +99,8 @@ _Want to add one to the list? Just make a pull request or [let us know via a com
 - If the language has letters that are not present in English update the keyboard in [src/components/keyboard/Keyboard.tsx](src/components/keyboard/Keyboard.tsx)
 - If the language's letters are made of multiple unicode characters, use a grapheme splitter at various points throughout the app or normalize the input so that all of the letters are made of a single character
 - If the language is written right-to-left, prepend `\u202E` (the unicode right-to-left override character) to the return statement of the inner function in `generateEmojiGrid` in [src/lib/share.ts](src/lib/share.ts)
+
+### How can I add usage tracking?
+
+- Create a Google Analytics 4 property and obtain the measurement ID (of the format `G-XXXXXXXXXX`)
+- In [.env](.env), add `REACT_APP_GOOGLE_MEASUREMENT_ID=G-XXXXXXXXXX`
