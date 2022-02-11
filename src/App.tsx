@@ -226,12 +226,12 @@ function App() {
         )}
         {isDarkMode ? (
           <SunIcon
-            className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
+            className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white sun"
             onClick={() => handleDarkMode(!isDarkMode)}
           />
         ) : (
           <MoonIcon
-            className="h-6 w-6 mr-2 cursor-pointer"
+            className="h-6 w-6 mr-2 cursor-pointer theme-switcher moon"
             onClick={() => handleDarkMode(!isDarkMode)}
           />
         )}
