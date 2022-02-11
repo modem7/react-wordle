@@ -60,6 +60,7 @@ Open [http://localhost:3000](http://localhost:3000) in browser.
 - [Wordle.cl](https://www.wordle.cl): Chilean modisms, cities, places
 - [Anidal](https://anidal-abrarhayat.web.app/): Animals
 - [FFXIVrdle](https://ffxivrdle.com/): Final Fantasy XIV
+- [Harry Potter](https://www.harrypotterwordle.com/): Harry Potter
 
 ### Math, Acronyms, Science, Tech, and more
 
