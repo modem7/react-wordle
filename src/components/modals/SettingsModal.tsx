@@ -20,7 +20,7 @@ export const SettingsModal = ({
   isDarkMode,
   handleDarkMode,
   isHighContrastMode,
-  handleHighConstrastMode
+  handleHighConstrastMode,
 }: Props) => {
   return (
     <BaseModal title="Settings" isOpen={isOpen} handleClose={handleClose}>
@@ -35,7 +35,7 @@ export const SettingsModal = ({
           flag={isDarkMode}
           handleFlag={handleDarkMode}
         />
-		<SettingsToggle
+        <SettingsToggle
           settingName="High Contrast Mode"
           flag={isHighContrastMode}
           handleFlag={handleHighConstrastMode}
