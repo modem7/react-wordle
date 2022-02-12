@@ -33,10 +33,10 @@ export const Key = ({
         status === 'correct' && localStorage.getItem('contrast') === 'high',
       'bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700 text-white':
         status === 'present' && localStorage.getItem('contrast') === 'high',
-      'bg-green-500 hover:bg-green-600 active:bg-green-700 text-white':
-        status === 'correct' && localStorage.getItem('contrast') === 'low',
+	  'bg-green-500 hover:bg-green-600 active:bg-green-700 text-white':
+        status === 'correct' && !(localStorage.getItem('contrast') === 'high'),
       'bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 text-white':
-        status === 'present' && localStorage.getItem('contrast') === 'low',
+        status === 'present' && !(localStorage.getItem('contrast') === 'high'),
     }
   )
 

@@ -34,9 +34,9 @@ export const Cell = ({
       'present shadowed bg-cyan-500 text-white border-cyan-500':
         status === 'present' && localStorage.getItem('contrast') === 'high',
       'correct shadowed bg-green-500 text-white border-green-500':
-        status === 'correct' && localStorage.getItem('contrast') === 'low',
+        status === 'correct' && !(localStorage.getItem('contrast') === 'high'),
       'present shadowed bg-yellow-500 text-white border-yellow-500':
-        status === 'present' && localStorage.getItem('contrast') === 'low',
+        status === 'present' && !(localStorage.getItem('contrast') === 'high'),
       'cell-fill-animation': isFilled,
       'cell-reveal': shouldReveal,
     }
