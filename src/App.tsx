@@ -37,6 +37,8 @@ import { addStatsForCompletedGame, loadStats } from './lib/stats'
 import {
   loadGameStateFromLocalStorage,
   saveGameStateToLocalStorage,
+  setStoredIsHighContrastMode,
+  getStoredIsHighContrastMode,
 } from './lib/localStorage'
 
 import './App.css'
@@ -62,10 +64,8 @@ function App() {
       ? true
       : false
   )
-  const [isHighContrastMode, setIsHighConstrastMode] = useState(
-    localStorage.getItem('contrast')
-      ? localStorage.getItem('contrast') === 'high'
-      : false
+  const [isHighContrastMode, setIsHighContrastMode] = useState(
+    getStoredIsHighContrastMode()
   )
   const [successAlert, setSuccessAlert] = useState('')
   const [isRevealing, setIsRevealing] = useState(false)
@@ -120,9 +120,9 @@ function App() {
     localStorage.setItem('gameMode', isHard ? 'hard' : 'normal')
   }
 
-  const handleHighConstrastMode = (isHighContrast: boolean) => {
-    setIsHighConstrastMode(isHighContrast)
-    localStorage.setItem('contrast', isHighContrast ? 'high' : 'low')
+  const handleHighContrastMode = (isHighContrast: boolean) => {
+    setIsHighContrastMode(isHighContrast)
+    setStoredIsHighContrastMode(isHighContrast)
   }
 
   useEffect(() => {
@@ -282,7 +282,7 @@ function App() {
         isDarkMode={isDarkMode}
         handleDarkMode={handleDarkMode}
         isHighContrastMode={isHighContrastMode}
-        handleHighConstrastMode={handleHighConstrastMode}
+        handleHighContrastMode={handleHighContrastMode}
       />
 
       <button

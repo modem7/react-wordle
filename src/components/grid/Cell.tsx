@@ -1,6 +1,7 @@
 import { CharStatus } from '../../lib/statuses'
 import classnames from 'classnames'
 import { REVEAL_TIME_MS } from '../../constants/settings'
+import { getStoredIsHighContrastMode } from '../../lib/localStorage'
 
 type Props = {
   value?: string
@@ -30,13 +31,13 @@ export const Cell = ({
       'absent shadowed bg-slate-400 dark:bg-slate-700 text-white border-slate-400 dark:border-slate-700':
         status === 'absent',
       'correct shadowed bg-orange-500 text-white border-orange-500':
-        status === 'correct' && localStorage.getItem('contrast') === 'high',
+        status === 'correct' && getStoredIsHighContrastMode(),
       'present shadowed bg-cyan-500 text-white border-cyan-500':
-        status === 'present' && localStorage.getItem('contrast') === 'high',
+        status === 'present' && getStoredIsHighContrastMode(),
       'correct shadowed bg-green-500 text-white border-green-500':
-        status === 'correct' && !(localStorage.getItem('contrast') === 'high'),
+        status === 'correct' && !getStoredIsHighContrastMode(),
       'present shadowed bg-yellow-500 text-white border-yellow-500':
-        status === 'present' && !(localStorage.getItem('contrast') === 'high'),
+        status === 'present' && !getStoredIsHighContrastMode(),
       'cell-fill-animation': isFilled,
       'cell-reveal': shouldReveal,
     }

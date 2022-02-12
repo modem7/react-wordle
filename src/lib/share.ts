@@ -1,6 +1,7 @@
 import { getGuessStatuses } from './statuses'
 import { solutionIndex } from './words'
 import { GAME_TITLE } from '../constants/strings'
+import { getStoredIsHighContrastMode } from './localStorage'
 
 export const shareStatus = (
   guesses: string[],
@@ -23,17 +24,17 @@ export const generateEmojiGrid = (guesses: string[]) => {
         .map((_, i) => {
           switch (status[i]) {
             case 'correct':
-              if (localStorage.getItem('contrast') === 'high') {
+              if (getStoredIsHighContrastMode()) {
                 return '🟧'
               }
               return '🟩'
             case 'present':
-              if (localStorage.getItem('contrast') === 'high') {
+              if (getStoredIsHighContrastMode()) {
                 return '🟦'
               }
               return '🟨'
             default:
-              if (localStorage.getItem('theme') === 'dark') {
+              if (getStoredIsHighContrastMode()) {
                 return '⬛'
               }
               return '⬜'
