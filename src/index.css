@@ -6,10 +6,17 @@
   --animation-speed: 1000ms;
   --animation-speed-fast: 500ms;
   --default-cell-bg-color: theme('colors.slate.400');
+  --correct-cell-bg-color: theme('colors.green.400');
+  --present-cell-bg-color: theme('colors.yellow.400');
 }
 
 .dark {
   --default-cell-bg-color: theme('colors.slate.700');
+}
+
+.high-contrast {
+  --correct-cell-bg-color: theme('colors.orange.400');
+  --present-cell-bg-color: theme('colors.cyan.400');
 }
 
 .cell-fill-animation {
@@ -66,8 +73,8 @@ svg:hover {
   }
   100% {
     transform: rotateX(180deg);
-    background-color: theme('colors.green.400');
-    border-color: theme('colors.green.400');
+    background-color: var(--correct-cell-bg-color);
+    border-color: var(--correct-cell-bg-color);
   }
 }
 
@@ -79,8 +86,8 @@ svg:hover {
   }
   100% {
     transform: rotateX(180deg);
-    background-color: theme('colors.yellow.400');
-    border-color: theme('colors.yellow.400');
+    background-color: var(--present-cell-bg-color);
+    border-color: var(--present-cell-bg-color);
   }
 }
 

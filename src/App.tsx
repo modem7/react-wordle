@@ -62,6 +62,11 @@ function App() {
       ? true
       : false
   )
+  const [isHighContrastMode, setIsHighConstrastMode] = useState(
+    localStorage.getItem('contrast')
+      ? localStorage.getItem('contrast') === 'high'
+      : false
+  )
   const [successAlert, setSuccessAlert] = useState('')
   const [isRevealing, setIsRevealing] = useState(false)
   const [guesses, setGuesses] = useState<string[]>(() => {
@@ -97,7 +102,13 @@ function App() {
     } else {
       document.documentElement.classList.remove('dark')
     }
-  }, [isDarkMode])
+
+    if (isHighContrastMode) {
+      document.documentElement.classList.add('high-contrast')
+    } else {
+      document.documentElement.classList.remove('high-contrast')
+    }
+  }, [isDarkMode, isHighContrastMode])
 
   const handleDarkMode = (isDark: boolean) => {
     setIsDarkMode(isDark)
@@ -107,6 +118,11 @@ function App() {
   const handleHardMode = (isHard: boolean) => {
     setIsHardMode(isHard)
     localStorage.setItem('gameMode', isHard ? 'hard' : 'normal')
+  }
+
+  const handleHighConstrastMode = (isHighContrast: boolean) => {
+    setIsHighConstrastMode(isHighContrast)
+    localStorage.setItem('contrast', isHighContrast ? 'high' : 'low')
   }
 
   useEffect(() => {
@@ -265,6 +281,8 @@ function App() {
         handleHardMode={handleHardMode}
         isDarkMode={isDarkMode}
         handleDarkMode={handleDarkMode}
+        isHighContrastMode={isHighContrastMode}
+        handleHighConstrastMode={handleHighConstrastMode}
       />
 
       <button

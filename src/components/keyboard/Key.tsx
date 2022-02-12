@@ -29,7 +29,11 @@ export const Key = ({
       'bg-slate-200 dark:bg-slate-600 hover:bg-slate-300 active:bg-slate-400':
         !status,
       'bg-slate-400 dark:bg-slate-800 text-white': status === 'absent',
-      'bg-green-500 hover:bg-green-600 active:bg-green-700 text-white':
+      'bg-orange-500 hover:bg-orange-600 active:bg-orange-700 text-white':
+        status === 'correct' && localStorage.getItem('contrast') === 'high',
+      'bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700 text-white':
+        status === 'present' && localStorage.getItem('contrast') === 'high',
+	  'bg-green-500 hover:bg-green-600 active:bg-green-700 text-white':
         status === 'correct',
       'bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 text-white':
         status === 'present',
