@@ -55,6 +55,7 @@ function App() {
   const [isNotEnoughLetters, setIsNotEnoughLetters] = useState(false)
   const [isStatsModalOpen, setIsStatsModalOpen] = useState(false)
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false)
+  const [isHardModeAlertOpen, setIsHardModeAlertOpen] = useState(false)
   const [isWordNotFoundAlertOpen, setIsWordNotFoundAlertOpen] = useState(false)
   const [currentRowClass, setCurrentRowClass] = useState('')
   const [isGameLost, setIsGameLost] = useState(false)
@@ -117,8 +118,15 @@ function App() {
   }
 
   const handleHardMode = (isHard: boolean) => {
-    setIsHardMode(isHard)
-    localStorage.setItem('gameMode', isHard ? 'hard' : 'normal')
+    if (guesses.length === 0) {
+      setIsHardMode(isHard)
+      localStorage.setItem('gameMode', isHard ? 'hard' : 'normal')
+    } else {
+      setIsHardModeAlertOpen(true)
+      return setTimeout(() => {
+        setIsHardModeAlertOpen(false)
+      }, ALERT_TIME_MS)
+    }
   }
 
   const handleHighContrastMode = (isHighContrast: boolean) => {
@@ -289,6 +297,7 @@ function App() {
         handleHardMode={handleHardMode}
         isDarkMode={isDarkMode}
         handleDarkMode={handleDarkMode}
+        isHardModeErrorModalOpen={isHardModeAlertOpen}
         isHighContrastMode={isHighContrastMode}
         handleHighContrastMode={handleHighContrastMode}
       />
