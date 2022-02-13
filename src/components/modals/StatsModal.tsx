@@ -78,9 +78,9 @@ export const StatsModal = ({
                 isGameLost,
                 isHardMode,
                 isDarkMode,
-                isHighContrastMode
+                isHighContrastMode,
+                handleShareToClipboard
               )
-              handleShareToClipboard()
             }}
           >
             {SHARE_TEXT}
