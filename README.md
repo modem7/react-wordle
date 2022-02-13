@@ -47,6 +47,7 @@ Open [http://localhost:3000](http://localhost:3000) in browser.
 - [Rudle](https://rudle.vercel.app): Russian
 - [Keclap](https://keclap.xyz/): Sundanese
 - [kelma.mt](https://kelma.mt): Maltese
+- [Wordle (BOS)](https://elahmo.github.io/wordle/): Bosnian
 
 ### Fun themes
 
