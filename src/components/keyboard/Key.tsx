@@ -22,6 +22,7 @@ export const Key = ({
   isRevealing,
 }: Props) => {
   const keyDelayMs = REVEAL_TIME_MS * MAX_WORD_LENGTH
+  const isHighContrast = getStoredIsHighContrastMode()
 
   const classes = classnames(
     'flex items-center justify-center rounded mx-0.5 text-xs font-bold cursor-pointer select-none dark:text-white',
@@ -31,13 +32,13 @@ export const Key = ({
         !status,
       'bg-slate-400 dark:bg-slate-800 text-white': status === 'absent',
       'bg-orange-500 hover:bg-orange-600 active:bg-orange-700 text-white':
-        status === 'correct' && getStoredIsHighContrastMode(),
+        status === 'correct' && isHighContrast,
       'bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700 text-white':
-        status === 'present' && getStoredIsHighContrastMode(),
+        status === 'present' && isHighContrast,
       'bg-green-500 hover:bg-green-600 active:bg-green-700 text-white':
-        status === 'correct' && !getStoredIsHighContrastMode(),
+        status === 'correct' && !isHighContrast,
       'bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 text-white':
-        status === 'present' && !getStoredIsHighContrastMode(),
+        status === 'present' && !isHighContrast,
     }
   )
 

@@ -19,22 +19,23 @@ export const generateEmojiGrid = (guesses: string[]) => {
   return guesses
     .map((guess) => {
       const status = getGuessStatuses(guess)
+      const isHighContrast = getStoredIsHighContrastMode()
       return guess
         .split('')
         .map((_, i) => {
           switch (status[i]) {
             case 'correct':
-              if (getStoredIsHighContrastMode()) {
+              if (isHighContrast) {
                 return '🟧'
               }
               return '🟩'
             case 'present':
-              if (getStoredIsHighContrastMode()) {
+              if (isHighContrast) {
                 return '🟦'
               }
               return '🟨'
             default:
-              if (getStoredIsHighContrastMode()) {
+              if (localStorage.getItem('theme') === 'dark') {
                 return '⬛'
               }
               return '⬜'
