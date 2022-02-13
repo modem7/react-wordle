@@ -105,5 +105,9 @@ _Want to add one to the list? Just make a pull request or [let us know via a com
 
 ### How can I add usage tracking?
 
+This repository includes support for Google Analytics, but, by default, this is disabled. To enable Google Analytics:
+
 - Create a Google Analytics 4 property and obtain the measurement ID (of the format `G-XXXXXXXXXX`)
 - In [.env](.env), add `REACT_APP_GOOGLE_MEASUREMENT_ID=G-XXXXXXXXXX`
+
+Keep in mind that your region might have legislation about obtaining a user's consent before enabling trackers. This is up to downstream repos to implement.
