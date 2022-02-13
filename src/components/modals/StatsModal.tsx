@@ -19,7 +19,7 @@ type Props = {
   gameStats: GameStats
   isGameLost: boolean
   isGameWon: boolean
-  handleShare: () => void
+  handleShareToClipboard: () => void
   isHardMode: boolean
   isDarkMode: boolean
   isHighContrastMode: boolean
@@ -32,7 +32,7 @@ export const StatsModal = ({
   gameStats,
   isGameLost,
   isGameWon,
-  handleShare,
+  handleShareToClipboard,
   isHardMode,
   isDarkMode,
   isHighContrastMode,
@@ -80,7 +80,7 @@ export const StatsModal = ({
                 isDarkMode,
                 isHighContrastMode
               )
-              handleShare()
+              handleShareToClipboard()
             }}
           >
             {SHARE_TEXT}
