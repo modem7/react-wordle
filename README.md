@@ -86,6 +86,7 @@ Open [http://localhost](http://localhost) in browser.
 - [AI-powered](https://github.com/asirota/wordle-ai): Includes an AI component
 - [Passwordle](https://passwordle.sp8c3.com/): Passwords
 - [Genel](https://andrewholding.github.io/gene-wordle/): Gene symbols
+- [Rundle](https://furstenheim.github.io/react-wordle/): Like wordle, but only last three guesses are considered.
 - [Numble](https://rbrignall.github.io/numble/): Maths
 
 _Want to add one to the list? Just make a pull request or [let us know via a comment here](https://github.com/cwackerfuss/react-wordle/issues/120)_
