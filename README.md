@@ -59,6 +59,7 @@ Open [http://localhost](http://localhost) in browser.
 - [Keclap](https://keclap.xyz/): Sundanese
 - [kelma.mt](https://kelma.mt): Maltese
 - [Wordle (BOS)](https://elahmo.github.io/wordle/): Bosnian
+- [Wordle (Spanish)](https://wordle-es.xavier.cc): Spanish/Espanol
 
 ### Fun themes
 
