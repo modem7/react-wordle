@@ -53,11 +53,6 @@
   animation-fill-mode: backwards;
 }
 
-svg:hover {
-  animation: float infinite;
-  animation-duration: var(--animation-speed);
-}
-
 .jiggle {
   animation: jiggle linear;
   animation-duration: var(--animation-speed-fast);
