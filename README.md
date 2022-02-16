@@ -40,55 +40,81 @@ Open [http://localhost](http://localhost) in browser.
 
 ### Other languages
 
-- [Wortel](https://wortel.wrintiewaar.co.za): Afrikaans
-- [Latindictionary.io](https://wordle.latindictionary.io/): Latin
-- [Kelmaly](https://kelmaly.com/): Arabic
 - [Arwordle](https://arwordle.netlify.app/): Arabic
-- [Wörtchen](https://woertchen.sofacoach.de): German
+- [Gerdle](https://gerdle.vext.co.uk/): Cornish (Kernowek)
+- [Keclap](https://keclap.xyz/): Sundanese
+- [Kelmaly](https://kelmaly.com/): Arabic
+- [Latindictionary.io](https://wordle.latindictionary.io/): Latin
+- [Lexoula](https://lexoula.com/): Ελληνικά (Greek)
+- [Malay](https://malay-wordle.netlify.app/): Bahasa Malaysia
+- [Parolette](https://parolette.netlify.app/): Italian
+- [Parolle.it](https://parolle.it): Italian
+- [Pashtoodle](https://pashtoodle.lingdocs.com): Pashto
+- [Persian](https://www.persian-wordle.ir/): Persian (Farsi)
+- [Rudle](https://rudle.vercel.app): Russian
+- [Sindhal](https://hellosindh.com/sindhal): Sindhi
+- [Szózat](https://szozat.miklosdanka.com/): Hungarian
+- [Tlembung](https://tlembung.vercel.app/): Japanese
+- [Tugma](https://tugma.vercel.app): Hiligaynon (spoken in the Philippines)
+- [Ukrainian](https://goroh.pp.ua/games/wordle): Ukrainian
+- [Urdle](https://urdle.chaoticity.com/): Urdu
 - [Vārdulis](https://wordle.lielakeda.lv/): Latvian
+- [Word-leh!](https://word-leh.com): Singlish
+- [Wordlar](http://wordlar.uz/): Uzbek
+- [Wordle (BOS)](https://elahmo.github.io/wordle/): Bosnian
+- [Wordle (Spanish)](https://wordle-es.xavier.cc): Spanish/Espanol
+- [Wordle-RO](https://wordle-ro.sirb.net/): Romanian
+- [Wortel](https://wortel.wrintiewaar.co.za): Afrikaans
+- [Wörtchen](https://woertchen.sofacoach.de): German
+- [kelma.mt](https://kelma.mt): Maltese
+- [Слівце](https://slivce.com/): Ukrainian
+- [ਪੰਜਾਬੀ](https://punjabipuzzle.netlify.app/): Punjabi
+- [சொல்லாடல் Soladle](https://omtamil.com/soladle): Tamil
+- [字知之明](https://zedaizd.github.io/zh-char-puzzle/): Traditional Chinese
 - [꼬들 - 한국어](https://belorin.github.io/): Korean
 - [한글 풀어쓰기 5자](https://nakosung.github.io/wordle/): Korean
-- [Urdle](https://urdle.chaoticity.com/): Urdu
-- [சொல்லாடல் Soladle](https://omtamil.com/soladle): Tamil
-- [Szózat](https://szozat.miklosdanka.com/): Hungarian
-- [Pashtoodle](https://pashtoodle.lingdocs.com): Pashto
-- [Malay](https://malay-wordle.netlify.app/): Bahasa Malaysia
-- [ਪੰਜਾਬੀ](https://punjabipuzzle.netlify.app/): Punjabi
-- [Слівце](https://slivce.com/): Ukrainian
-- [Rudle](https://rudle.vercel.app): Russian
-- [Keclap](https://keclap.xyz/): Sundanese
-- [kelma.mt](https://kelma.mt): Maltese
-- [Wordle (BOS)](https://elahmo.github.io/wordle/): Bosnian
-- [Lexoula](https://lexoula.com/): Ελληνικά (Greek)
-- [Wordle (Spanish)](https://wordle-es.xavier.cc): Spanish/Espanol
 
 ### Fun themes
 
-- [Murdle](https://murdle.vercel.app/): Spooky hangman mashup
-- [Taylordle](https://www.taylordle.com/): Taylor Swift
-- [Dundle](https://dundle.dunmiffcord.com/): The Office
-- [Weedel](https://meetmeinouter.space/wordle/): Video game characters
-- [JoJodle](https://jojo-news.com/fun/jojodle/): JoJo’s Bizarre Adventure
-- [Airportle](https://airportle.scottscheapflights.com/): Airport Codes
-- [Mahjong Handle](https://mahjong-handle.update.sh/): Mahjong Hands
 - ['en si lì'ur](https://tirea.learnnavi.org/wordle): Na'vi, the constructed language from James Cameron's AVATAR (2009)
-- [Wordle.cl](https://www.wordle.cl): Chilean modisms, cities, places
+- [Airportle](https://airportle.scottscheapflights.com/): Airport Codes
 - [Anidal](https://anidal-abrarhayat.web.app/): Animals
+- [Birdle - Emojis](https://birdle.dev): Bird emojis
+- [Birdle](https://www.creek-birdle.com/): Birds
+- [Buildly](https://buildly.procurepro.co/): Construction themed
+- [Crosswordle](https://crosswordle.mekoppe.com/): Crossword mashup
+- [Dundle](https://dundle.dunmiffcord.com/): The Office
 - [FFXIVrdle](https://ffxivrdle.com/): Final Fantasy XIV
 - [Harry Potter](https://www.harrypotterwordle.com/): Harry Potter
+- [JoJodle](https://jojo-news.com/fun/jojodle/): JoJo’s Bizarre Adventure
+- [Mahjong Handle](https://mahjong-handle.update.sh/): Mahjong Hands
+- [Movie Wordle](https://movie-wordle.vercel.app): Bollywood
+- [Murdle](https://murdle.vercel.app/): Spooky hangman mashup
+- [Poker Handle](https://kikychow.github.io/poker-wordle/): Poker
+- [Quettale](https://quettale.vercel.app/): Quenya, Elven language in LOTR
+- [Radiole](https://radiole.vercel.app/): Radio-themed (for World Radio Day)
+- [Squirdle](https://squirdle-inky.vercel.app/): Pokeman
+- [Taylordle](https://www.taylordle.com/): Taylor Swift
+- [Trekle](https://treklegame.com): Star Trek
+- [Weedel](https://meetmeinouter.space/wordle/): Video game characters
+- [Wordle.cl](https://www.wordle.cl): Chilean modisms, cities, places
+- [Wrdl](https://wrdl-abae.vercel.app/): Words that are 5 letters long after getting rid of their vowels
 
 ### Math, Acronyms, Science, Tech, and more
 
-- [Primel](https://converged.yt/primel/): Prime numbers
-- [Syscordle](https://nezza.github.io/syscordle/): SYSCALL
-- [Mathler](https://www.mathler.com/): Find the solution that equals X
-- [Stockle](https://stockle.win/): Guess the stock or ETF
 - [AI-powered](https://github.com/asirota/wordle-ai): Includes an AI component
-- [Passwordle](https://passwordle.sp8c3.com/): Passwords
 - [Genel](https://andrewholding.github.io/gene-wordle/): Gene symbols
-- [Rundle](https://furstenheim.github.io/react-wordle/): Like wordle, but only last three guesses are considered.
+- [Jazle](https://jazle.quest/): Javascript
+- [Mathler](https://www.mathler.com/): Find the solution that equals X
+- [Morsel](https://plingbang.github.io/morsel/): Morse
 - [Numble](https://rbrignall.github.io/numble/): Maths
 - [Opsle](https://opsle.vercel.app/): Ops
+- [Passwordle](https://passwordle.sp8c3.com/): Passwords
+- [Primel](https://converged.yt/primel/): Prime numbers
+- [Rundle](https://furstenheim.github.io/react-wordle/): Like wordle, but only last three guesses are considered.
+- [Stockle](https://stockle.win/): Guess the stock or ETF
+- [Syscordle](https://nezza.github.io/syscordle/): SYSCALL
+- [UNLOCOdle](https://unlocodle.collabital.com/): UNLOCODEs
 
 _Want to add one to the list? Just make a pull request or [let us know via a comment here](https://github.com/cwackerfuss/react-wordle/issues/120)_
 
