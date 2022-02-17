@@ -48,6 +48,7 @@ Open [http://localhost](http://localhost) in browser.
 - [Latindictionary.io](https://wordle.latindictionary.io/): Latin
 - [Lexoula](https://lexoula.com/): Ελληνικά (Greek)
 - [Malay](https://malay-wordle.netlify.app/): Bahasa Malaysia
+- [Mondle](https://mondle.vercel.app/): Mongolian
 - [Parolette](https://parolette.netlify.app/): Italian
 - [Parolle.it](https://parolle.it): Italian
 - [Pashtoodle](https://pashtoodle.lingdocs.com): Pashto
