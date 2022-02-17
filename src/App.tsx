@@ -285,6 +285,8 @@ function App() {
         isGameWon={isGameWon}
         handleShare={() => showSuccessAlert(GAME_COPIED_MESSAGE)}
         isHardMode={isHardMode}
+        isDarkMode={isDarkMode}
+        isHighContrastMode={isHighContrastMode}
       />
       <SettingsModal
         isOpen={isSettingsModalOpen}
