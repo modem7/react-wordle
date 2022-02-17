@@ -69,6 +69,7 @@ Open [http://localhost](http://localhost) in browser.
 - [Wordle-RO](https://wordle-ro.sirb.net/): Romanian
 - [Wortel](https://wortel.wrintiewaar.co.za): Afrikaans
 - [Wörtchen](https://woertchen.sofacoach.de): German
+- [SGWordle](https://sgwordle.now.sh/): Swiss German
 - [kelma.mt](https://kelma.mt): Maltese
 - [Слівце](https://slivce.com/): Ukrainian
 - [ਪੰਜਾਬੀ](https://punjabipuzzle.netlify.app/): Punjabi
@@ -91,6 +92,7 @@ Open [http://localhost](http://localhost) in browser.
 - [Harry Potter](https://www.harrypotterwordle.com/): Harry Potter
 - [JoJodle](https://jojo-news.com/fun/jojodle/): JoJo’s Bizarre Adventure
 - [Mahjong Handle](https://mahjong-handle.update.sh/): Mahjong Hands
+- [Filmle](https://filmle.now.sh/): Movie titles
 - [Movie Wordle](https://movie-wordle.vercel.app): Bollywood
 - [Murdle](https://murdle.vercel.app/): Spooky hangman mashup
 - [Poker Handle](https://kikychow.github.io/poker-wordle/): Poker
