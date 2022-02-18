@@ -55,6 +55,7 @@ Open [http://localhost](http://localhost) in browser.
 - [Rudle](https://rudle.vercel.app): Russian
 - [Sindhal](https://hellosindh.com/sindhal): Sindhi
 - [Szózat](https://szozat.miklosdanka.com/): Hungarian
+- [Tàu Tâi-gí (Taigi Wordle)](https://tau.taigi.info/): Taigi (Taiwanese)
 - [Tlembung](https://tlembung.vercel.app/): Japanese
 - [Tugma](https://tugma.vercel.app): Hiligaynon (spoken in the Philippines)
 - [Ukrainian](https://goroh.pp.ua/games/wordle): Ukrainian
