@@ -24,6 +24,7 @@ import {
   ALERT_TIME_MS,
   REVEAL_TIME_MS,
   GAME_LOST_INFO_DELAY,
+  WELCOME_INFO_MODAL_MS,
 } from './constants/settings'
 import {
   isWordInWordList,
@@ -98,7 +99,9 @@ function App() {
     // if no game state on load,
     // show the user the how-to info modal
     if (!loadGameStateFromLocalStorage()) {
-      setIsInfoModalOpen(true)
+      setTimeout(() => {
+        setIsInfoModalOpen(true)
+      }, WELCOME_INFO_MODAL_MS)
     }
   }, [])
 
