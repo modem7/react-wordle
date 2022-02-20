@@ -21,7 +21,6 @@ import {
 import {
   MAX_WORD_LENGTH,
   MAX_CHALLENGES,
-  ALERT_TIME_MS,
   REVEAL_TIME_MS,
   GAME_LOST_INFO_DELAY,
   WELCOME_INFO_MODAL_MS,
@@ -140,6 +139,10 @@ function App() {
     setStoredIsHighContrastMode(isHighContrast)
   }
 
+  const clearCurrentRowClass = () => {
+    setCurrentRowClass('')
+  }
+
   useEffect(() => {
     saveGameStateToLocalStorage({ guesses, solution })
   }, [guesses])
@@ -183,31 +186,29 @@ function App() {
     if (isGameWon || isGameLost) {
       return
     }
+
     if (!(unicodeLength(currentGuess) === MAX_WORD_LENGTH)) {
-      showErrorAlert(NOT_ENOUGH_LETTERS_MESSAGE)
       setCurrentRowClass('jiggle')
-      return setTimeout(() => {
-        setCurrentRowClass('')
-      }, ALERT_TIME_MS)
+      return showErrorAlert(NOT_ENOUGH_LETTERS_MESSAGE, {
+        onClose: clearCurrentRowClass,
+      })
     }
 
     if (!isWordInWordList(currentGuess)) {
-      showErrorAlert(WORD_NOT_FOUND_MESSAGE)
       setCurrentRowClass('jiggle')
-      return setTimeout(() => {
-        setCurrentRowClass('')
-      }, ALERT_TIME_MS)
+      return showErrorAlert(WORD_NOT_FOUND_MESSAGE, {
+        onClose: clearCurrentRowClass,
+      })
     }
 
     // enforce hard mode - all guesses must contain all previously revealed letters
     if (isHardMode) {
       const firstMissingReveal = findFirstUnusedReveal(currentGuess, guesses)
       if (firstMissingReveal) {
-        showErrorAlert(firstMissingReveal)
         setCurrentRowClass('jiggle')
-        return setTimeout(() => {
-          setCurrentRowClass('')
-        }, ALERT_TIME_MS)
+        return showErrorAlert(firstMissingReveal, {
+          onClose: clearCurrentRowClass,
+        })
       }
     }
 
