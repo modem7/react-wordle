@@ -6,8 +6,8 @@ import { default as GraphemeSplitter } from 'grapheme-splitter'
 
 export const isWordInWordList = (word: string) => {
   return (
-    WORDS.includes(word.toLowerCase()) ||
-    VALID_GUESSES.includes(word.toLowerCase())
+    WORDS.includes(localeAwareLowerCase(word)) ||
+    VALID_GUESSES.includes(localeAwareLowerCase(word))
   )
 }
 
@@ -60,6 +60,18 @@ export const unicodeLength = (word: string) => {
   return unicodeSplit(word).length
 }
 
+export const localeAwareLowerCase = (text: string) => {
+  return process.env.REACT_APP_LOCALE_STRING
+    ? text.toLocaleLowerCase(process.env.REACT_APP_LOCALE_STRING)
+    : text.toLowerCase()
+}
+
+export const localeAwareUpperCase = (text: string) => {
+  return process.env.REACT_APP_LOCALE_STRING
+    ? text.toLocaleUpperCase(process.env.REACT_APP_LOCALE_STRING)
+    : text.toUpperCase()
+}
+
 export const getWordOfDay = () => {
   // January 1, 2022 Game Epoch
   const epochMs = new Date('January 1, 2022 00:00:00').valueOf()
@@ -69,7 +81,7 @@ export const getWordOfDay = () => {
   const nextday = (index + 1) * msInDay + epochMs
 
   return {
-    solution: WORDS[index % WORDS.length].toUpperCase(),
+    solution: localeAwareUpperCase(WORDS[index % WORDS.length]),
     solutionIndex: index,
     tomorrow: nextday,
   }
