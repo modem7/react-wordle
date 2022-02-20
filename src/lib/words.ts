@@ -26,20 +26,22 @@ export const findFirstUnusedReveal = (word: string, guesses: string[]) => {
   const lettersLeftArray = new Array<string>()
   const guess = guesses[guesses.length - 1]
   const statuses = getGuessStatuses(guess)
+  const splitWord = unicodeSplit(word)
+  const splitGuess = unicodeSplit(guess)
 
-  for (let i = 0; i < guess.length; i++) {
+  for (let i = 0; i < splitGuess.length; i++) {
     if (statuses[i] === 'correct' || statuses[i] === 'present') {
-      lettersLeftArray.push(guess[i])
+      lettersLeftArray.push(splitGuess[i])
     }
-    if (statuses[i] === 'correct' && word[i] !== guess[i]) {
-      return WRONG_SPOT_MESSAGE(guess[i], i + 1)
+    if (statuses[i] === 'correct' && splitWord[i] !== splitGuess[i]) {
+      return WRONG_SPOT_MESSAGE(splitGuess[i], i + 1)
     }
   }
 
   // check for the first unused letter, taking duplicate letters
   // into account - see issue #198
   let n
-  for (const letter of word) {
+  for (const letter of splitWord) {
     n = lettersLeftArray.indexOf(letter)
     if (n !== -1) {
       lettersLeftArray.splice(n, 1)
