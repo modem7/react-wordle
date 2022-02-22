@@ -53,6 +53,7 @@ Open [http://localhost](http://localhost) in browser.
 - [Parolle.it](https://parolle.it): Italian
 - [Pashtoodle](https://pashtoodle.lingdocs.com): Pashto
 - [Persian](https://www.persian-wordle.ir/): Persian (Farsi)
+- [Pinyin](https://www.pinyindle.com/): Pinyin (romanization system for Mandarin Chinese)
 - [Rudle](https://rudle.vercel.app): Russian
 - [Sindhal](https://hellosindh.com/sindhal): Sindhi
 - [Szózat](https://szozat.miklosdanka.com/): Hungarian
