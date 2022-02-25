@@ -4,9 +4,15 @@ type Props = {
   settingName: string
   flag: boolean
   handleFlag: Function
+  description?: string
 }
 
-export const SettingsToggle = ({ settingName, flag, handleFlag }: Props) => {
+export const SettingsToggle = ({
+  settingName,
+  flag,
+  handleFlag,
+  description,
+}: Props) => {
   const toggleHolder = classnames(
     'w-14 h-8 flex items-center bg-gray-300 rounded-full p-1 duration-300 ease-in-out cursor-pointer',
     {
@@ -20,11 +26,16 @@ export const SettingsToggle = ({ settingName, flag, handleFlag }: Props) => {
     }
   )
   return (
-    <div className="flex justify-between items-center gap-8 mt-2">
-      <h2 className="text-gray-500 dark:text-gray-300">{settingName}</h2>
-      <div className={toggleHolder} onClick={() => handleFlag(!flag)}>
-        <div className={toggleButton} />
+    <>
+      <div className="flex justify-between items-center gap-8 mt-2">
+        <h2 className="text-gray-500 dark:text-gray-300">{settingName}</h2>
+        <div className={toggleHolder} onClick={() => handleFlag(!flag)}>
+          <div className={toggleButton} />
+        </div>
       </div>
-    </div>
+      <p className="flex py-1 text-xs text-gray-500 dark:text-gray-300">
+        {description}
+      </p>
+    </>
   )
 }
