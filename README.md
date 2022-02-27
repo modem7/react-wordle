@@ -78,6 +78,7 @@ Open [http://localhost](http://localhost) in browser.
 - [字知之明](https://zedaizd.github.io/zh-char-puzzle/): Traditional Chinese
 - [꼬들 - 한국어](https://belorin.github.io/): Korean
 - [한글 풀어쓰기 5자](https://nakosung.github.io/wordle/): Korean
+- [ไทย](https://buddhistuniversity.net/wordle-thai/): Thai
 
 ### Fun themes
 
