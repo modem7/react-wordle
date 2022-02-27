@@ -248,7 +248,7 @@ function App() {
         setIsSettingsModalOpen={setIsSettingsModalOpen}
       />
       <div className="pt-2 pb-8 max-w-7xl mx-auto sm:px-6 lg:px-8 flex flex-col grow">
-        <div className="pb-6 md:grow-0 grow">
+        <div className="pb-6 grow">
           <Grid
             guesses={guesses}
             currentGuess={currentGuess}
