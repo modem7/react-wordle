@@ -1,8 +1,3 @@
-import {
-  InformationCircleIcon,
-  ChartBarIcon,
-  CogIcon,
-} from '@heroicons/react/outline'
 import { useState, useEffect } from 'react'
 import { Grid } from './components/grid/Grid'
 import { Keyboard } from './components/keyboard/Keyboard'
@@ -10,7 +5,6 @@ import { InfoModal } from './components/modals/InfoModal'
 import { StatsModal } from './components/modals/StatsModal'
 import { SettingsModal } from './components/modals/SettingsModal'
 import {
-  GAME_TITLE,
   WIN_MESSAGES,
   GAME_COPIED_MESSAGE,
   NOT_ENOUGH_LETTERS_MESSAGE,
@@ -44,6 +38,7 @@ import { default as GraphemeSplitter } from 'grapheme-splitter'
 import './App.css'
 import { AlertContainer } from './components/alerts/AlertContainer'
 import { useAlert } from './context/AlertContext'
+import { Navbar } from './components/navbar/Navbar'
 
 function App() {
   const prefersDarkMode = window.matchMedia(
@@ -246,67 +241,56 @@ function App() {
   }
 
   return (
-    <div className="pt-2 pb-8 max-w-7xl mx-auto sm:px-6 lg:px-8 h-screen flex flex-col">
-      <div className="flex w-80 mx-auto items-center mt-4 mb-6">
-        <h1 className="text-xl ml-2.5 grow font-bold dark:text-white">
-          {GAME_TITLE}
-        </h1>
-        <InformationCircleIcon
-          className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
-          onClick={() => setIsInfoModalOpen(true)}
-        />
-        <ChartBarIcon
-          className="h-6 w-6 mr-3 cursor-pointer dark:stroke-white"
-          onClick={() => setIsStatsModalOpen(true)}
-        />
-        <CogIcon
-          className="h-6 w-6 mr-3 cursor-pointer dark:stroke-white"
-          onClick={() => setIsSettingsModalOpen(true)}
-        />
-      </div>
-      <div className="pb-6 grow">
-        <Grid
+    <div>
+      <Navbar
+        setIsInfoModalOpen={setIsInfoModalOpen}
+        setIsStatsModalOpen={setIsStatsModalOpen}
+        setIsSettingsModalOpen={setIsSettingsModalOpen}
+      />
+      <div className="pt-2 pb-8 max-w-7xl mx-auto sm:px-6 lg:px-8  h-screen flex flex-col">
+        <div className='pb-6 grow'>
+          <Grid
+            guesses={guesses}
+            currentGuess={currentGuess}
+            isRevealing={isRevealing}
+            currentRowClassName={currentRowClass}
+          />
+        </div>
+        <Keyboard
+          onChar={onChar}
+          onDelete={onDelete}
+          onEnter={onEnter}
           guesses={guesses}
-          currentGuess={currentGuess}
           isRevealing={isRevealing}
-          currentRowClassName={currentRowClass}
         />
+        <InfoModal
+          isOpen={isInfoModalOpen}
+          handleClose={() => setIsInfoModalOpen(false)}
+        />
+        <StatsModal
+          isOpen={isStatsModalOpen}
+          handleClose={() => setIsStatsModalOpen(false)}
+          guesses={guesses}
+          gameStats={stats}
+          isGameLost={isGameLost}
+          isGameWon={isGameWon}
+          handleShare={() => showSuccessAlert(GAME_COPIED_MESSAGE)}
+          isHardMode={isHardMode}
+          isDarkMode={isDarkMode}
+          isHighContrastMode={isHighContrastMode}
+        />
+        <SettingsModal
+          isOpen={isSettingsModalOpen}
+          handleClose={() => setIsSettingsModalOpen(false)}
+          isHardMode={isHardMode}
+          handleHardMode={handleHardMode}
+          isDarkMode={isDarkMode}
+          handleDarkMode={handleDarkMode}
+          isHighContrastMode={isHighContrastMode}
+          handleHighContrastMode={handleHighContrastMode}
+        />
+        <AlertContainer />
       </div>
-      <Keyboard
-        onChar={onChar}
-        onDelete={onDelete}
-        onEnter={onEnter}
-        guesses={guesses}
-        isRevealing={isRevealing}
-      />
-      <InfoModal
-        isOpen={isInfoModalOpen}
-        handleClose={() => setIsInfoModalOpen(false)}
-      />
-      <StatsModal
-        isOpen={isStatsModalOpen}
-        handleClose={() => setIsStatsModalOpen(false)}
-        guesses={guesses}
-        gameStats={stats}
-        isGameLost={isGameLost}
-        isGameWon={isGameWon}
-        handleShare={() => showSuccessAlert(GAME_COPIED_MESSAGE)}
-        isHardMode={isHardMode}
-        isDarkMode={isDarkMode}
-        isHighContrastMode={isHighContrastMode}
-      />
-      <SettingsModal
-        isOpen={isSettingsModalOpen}
-        handleClose={() => setIsSettingsModalOpen(false)}
-        isHardMode={isHardMode}
-        handleHardMode={handleHardMode}
-        isDarkMode={isDarkMode}
-        handleDarkMode={handleDarkMode}
-        isHighContrastMode={isHighContrastMode}
-        handleHighContrastMode={handleHighContrastMode}
-      />
-
-      <AlertContainer />
     </div>
   )
 }
