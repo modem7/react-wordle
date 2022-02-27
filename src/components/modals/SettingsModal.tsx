@@ -28,7 +28,7 @@ export const SettingsModal = ({
 }: Props) => {
   return (
     <BaseModal title="Settings" isOpen={isOpen} handleClose={handleClose}>
-      <div className="grid-cols-2 gap-4">
+      <div className="flex flex-col mt-2 divide-y">
         <SettingsToggle
           settingName="Hard Mode"
           flag={isHardMode}
