@@ -246,7 +246,7 @@ function App() {
   }
 
   return (
-    <div className="pt-2 pb-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
+    <div className="pt-2 pb-8 max-w-7xl mx-auto sm:px-6 lg:px-8 h-screen flex flex-col">
       <div className="flex w-80 mx-auto items-center mt-4 mb-6">
         <h1 className="text-xl ml-2.5 grow font-bold dark:text-white">
           {GAME_TITLE}
@@ -264,12 +264,14 @@ function App() {
           onClick={() => setIsSettingsModalOpen(true)}
         />
       </div>
-      <Grid
-        guesses={guesses}
-        currentGuess={currentGuess}
-        isRevealing={isRevealing}
-        currentRowClassName={currentRowClass}
-      />
+      <div className="pb-6 grow">
+        <Grid
+          guesses={guesses}
+          currentGuess={currentGuess}
+          isRevealing={isRevealing}
+          currentRowClassName={currentRowClass}
+        />
+      </div>
       <Keyboard
         onChar={onChar}
         onDelete={onDelete}
