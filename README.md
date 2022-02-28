@@ -119,6 +119,7 @@ Open [http://localhost](http://localhost) in browser.
 - [Passwordle](https://passwordle.sp8c3.com/): Passwords
 - [Primel](https://converged.yt/primel/): Prime numbers
 - [Qwordle](https://qwordle.bhat.ca/): Quantum version of Wordle (uses entangled word-pairs)
+- [Quantle](https://deduckproject.github.io/quantle/): Another quantum variant where guesses are quantum equations
 - [Rundle](https://furstenheim.github.io/react-wordle/): Like wordle, but only last three guesses are considered.
 - [Stockle](https://stockle.win/): Guess the stock or ETF
 - [Syscordle](https://nezza.github.io/syscordle/): SYSCALL
