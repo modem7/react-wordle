@@ -30,7 +30,7 @@ export const Navbar = ({
             onClick={() => setIsStatsModalOpen(true)}
           />
           <CogIcon
-            className="h-6 w-6 mr-3 cursor-pointer dark:stroke-white"
+            className="h-6 w-6 cursor-pointer dark:stroke-white"
             onClick={() => setIsSettingsModalOpen(true)}
           />
         </div>
