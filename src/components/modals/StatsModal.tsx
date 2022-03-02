@@ -23,6 +23,7 @@ type Props = {
   isHardMode: boolean
   isDarkMode: boolean
   isHighContrastMode: boolean
+  numberOfGuessesMade: number
 }
 
 export const StatsModal = ({

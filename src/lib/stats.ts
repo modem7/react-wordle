@@ -23,6 +23,7 @@ export const addStatsForCompletedGame = (
   } else {
     stats.winDistribution[count] += 1
     stats.currentStreak += 1
+    stats.numberOfGuessesMade = count + 1
 
     if (stats.bestStreak < stats.currentStreak) {
       stats.bestStreak = stats.currentStreak
@@ -42,6 +43,7 @@ const defaultStats: GameStats = {
   bestStreak: 0,
   totalGames: 0,
   successRate: 0,
+  numberOfGuessesMade: 0,
 }
 
 export const loadStats = () => {
