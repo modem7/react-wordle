@@ -4,14 +4,14 @@ type Props = {
   index: number
   size: number
   label: string
-  currentGuess: boolean
+  currentDayStatRow: boolean
 }
 
-export const Progress = ({ index, size, label, currentGuess }: Props) => {
+export const Progress = ({ index, size, label, currentDayStatRow }: Props) => {
   const currentRowClass = classNames(
     'bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5',
     {
-      'current-stat-row': currentGuess,
+      'current-stat-row': currentDayStatRow,
     }
   )
   return (
