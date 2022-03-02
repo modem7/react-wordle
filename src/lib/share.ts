@@ -1,5 +1,5 @@
 import { getGuessStatuses } from './statuses'
-import { solutionIndex } from './words'
+import { solutionIndex, unicodeSplit } from './words'
 import { GAME_TITLE } from '../constants/strings'
 import { MAX_CHALLENGES } from '../constants/settings'
 import { UAParser } from 'ua-parser-js'
@@ -46,8 +46,9 @@ export const generateEmojiGrid = (guesses: string[], tiles: string[]) => {
   return guesses
     .map((guess) => {
       const status = getGuessStatuses(guess)
-      return guess
-        .split('')
+      const splitGuess = unicodeSplit(guess)
+
+      return splitGuess
         .map((_, i) => {
           switch (status[i]) {
             case 'correct':
