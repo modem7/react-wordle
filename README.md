@@ -110,6 +110,7 @@ Open [http://localhost](http://localhost) in browser.
 ### Math, Acronyms, Science, Tech, and more
 
 - [AI-powered](https://github.com/asirota/wordle-ai): Includes an AI component
+- [Colordle](https://github.com/necropolina/colordle): Guess the hexadecimal color code of the background
 - [Genel](https://andrewholding.github.io/gene-wordle/): Gene symbols
 - [Jazle](https://jazle.quest/): Javascript
 - [Mathler](https://www.mathler.com/): Find the solution that equals X
@@ -125,7 +126,6 @@ Open [http://localhost](http://localhost) in browser.
 - [Syscordle](https://nezza.github.io/syscordle/): SYSCALL
 - [UNLOCOdle](https://unlocodle.collabital.com/): UNLOCODEs
 - [Visionle](https://orisenbazuru.github.io/visionle/): Guess the label of randomly chosen image from ImageNet/ImageNet-Sketch dataset (Machine learning)
-- [Colordle](https://github.com/necropolina/colordle): Guess the hexadecimal color code of the background
 
 _Want to add one to the list? Just make a pull request or [let us know via a comment here](https://github.com/cwackerfuss/react-wordle/issues/120)_
 
