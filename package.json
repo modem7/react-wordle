@@ -2,6 +2,7 @@
   "name": "game",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://modem7.github.io/react-wordle",
   "dependencies": {
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
@@ -24,7 +25,9 @@
     "grapheme-splitter": "1.0.4"
   },
   "scripts": {
-    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "set \"CI=false\" && react-scripts build",
     "eject": "react-scripts eject",
     "fix": "prettier --write src",
     "lint": "prettier --check src",
