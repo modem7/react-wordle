@@ -11,6 +11,25 @@ Modified by [modem7](https://github.com/modem7) for github-pages.
 
 [**Try it out!**](https://modem7.github.io/react-wordle/)
 
+# Configuration
+
+```yaml
+version: "2.4"
+
+services:
+
+  wordle:
+    image: modem7/wordle
+    container_name: Wordle
+    ports:
+      - 80:3000
+```
+
+# Tags
+| Tag | Description |
+| :----: | --- |
+| Latest | Latest version |
+
 ## Project Screenshot
 
 ![image](https://user-images.githubusercontent.com/4349962/158677511-50faa60b-26a1-4880-a580-b433389f03aa.png)

@@ -27,14 +27,14 @@ steps:
       cache_from: "modem7/wordle:latest"
       platforms: # if it doesn't work run docker run --privileged --rm tonistiigi/binfmt --install all
         - linux/amd64
-        - linux/arm/v6
-        - linux/arm/v7
-        - linux/arm64/v8
+        # - linux/arm/v6
+        # - linux/arm/v7
+        # - linux/arm64/v8
       username:
         from_secret: docker_username
       password:
         from_secret: docker_password
-      tags: latest
+      tags: test
 
   - name: slack
     image: themaz/drone-slack
