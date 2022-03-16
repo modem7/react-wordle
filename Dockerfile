@@ -1,4 +1,4 @@
-FROM node:16.14.0-alpine3.14 AS node_modules
+FROM node:17.7.1-alpine3.14 AS node_modules
 WORKDIR /app
 COPY package-lock.json package.json ./
 RUN npm install
@@ -7,7 +7,7 @@ COPY . .
 FROM node_modules AS prod_builder
 RUN npm run build
 
-FROM nginx:1.20.2-alpine AS prod
+FROM nginx:1.21.6-alpine AS prod
 COPY --from=prod_builder /app/build /usr/share/nginx/html
 # Default HTTP port of Nginx.
 EXPOSE 80
