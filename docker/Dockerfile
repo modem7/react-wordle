@@ -8,7 +8,7 @@ FROM node_modules AS prod_builder
 RUN npm run build
 
 ## Production image
-FROM nginx:1.20.2-alpine AS prod
+FROM nginx:1.21.6-alpine AS prod
 COPY docker/etc/nginx/nginx.conf /etc/nginx/nginx.conf
 COPY docker/etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
 COPY --from=prod_builder /app/build /usr/share/nginx/html
