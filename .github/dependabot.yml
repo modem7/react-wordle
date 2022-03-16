@@ -1,0 +1,25 @@
+# Docs: <https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/customizing-dependency-updates>
+
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    assignees:
+      - "modem7"
+
+  - package-ecosystem: "docker" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    assignees:
+      - "modem7"
+
+  - package-ecosystem: "npm" # see documentation for possible values
+    directory: "/" # location of package manifests
+    schedule:
+      interval: "daily"
+    assignees:
+      - "modem7"
