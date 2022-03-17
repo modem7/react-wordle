@@ -14,22 +14,39 @@ Modified by [modem7](https://github.com/modem7) for github-pages.
 
 # Configuration
 
+## Latest
+
 ```yaml
 version: "2.4"
 
 services:
 
   wordle:
-    image: modem7/wordle
+    image: modem7/wordle:latest
     container_name: Wordle
     ports:
       - 80:8080
+```
+
+## Legacy
+
+```yaml
+version: "2.4"
+
+services:
+
+  wordle:
+    image: modem7/wordle:legacy
+    container_name: Wordle
+    ports:
+      - 80:80
 ```
 
 # Tags
 | Tag | Description |
 | :----: | --- |
 | latest | Latest version |
+| legacy | Legacy version |
 
 ## Project Screenshot
 
