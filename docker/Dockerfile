@@ -18,6 +18,3 @@ RUN ./build_system.sh && rm ./build_system.sh
 # port use by Nginx within docker network.
 EXPOSE 8080
 USER reactle
-
-HEALTHCHECK --interval=30s --timeout=10s --retries=3 --start-period=10s \
-    CMD curl -fSs 127.0.0.1:80/healthz || exit 1
