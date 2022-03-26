@@ -24,9 +24,9 @@ updates:
     assignees:
       - "modem7"
 
-  - package-ecosystem: "npm" # see documentation for possible values
-    directory: "/" # location of package manifests
-    schedule:
-      interval: "daily"
-    assignees:
-      - "modem7"
+  # - package-ecosystem: "npm" # see documentation for possible values
+    # directory: "/" # location of package manifests
+    # schedule:
+      # interval: "daily"
+    # assignees:
+      # - "modem7"
