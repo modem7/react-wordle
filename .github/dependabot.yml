@@ -7,26 +7,38 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+      timezone: "Europe/London"
     assignees:
       - "modem7"
+    labels:
+      - "dependencies"
 
   - package-ecosystem: "docker" # See documentation for possible values
     directory: "/docker" # Location of package manifests
     schedule:
       interval: "daily"
+      timezone: "Europe/London"
     assignees:
       - "modem7"
+    labels:
+      - "dependencies"
 
   - package-ecosystem: "docker" # See documentation for possible values
     directory: "/legacy" # Location of package manifests
     schedule:
       interval: "daily"
+      timezone: "Europe/London"
     assignees:
       - "modem7"
+    labels:
+      - "dependencies"
 
   # - package-ecosystem: "npm" # see documentation for possible values
     # directory: "/" # location of package manifests
     # schedule:
       # interval: "daily"
+      # timezone: "Europe/London"
     # assignees:
       # - "modem7"
+    # labels:
+      # - "dependencies"
