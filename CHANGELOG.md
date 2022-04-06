@@ -4,17 +4,22 @@ All notable changes to this project will be documented in this file.
  
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
-## [2.0.3] - 2021-03-23
+## 2021-04-06
+
+### Fixed
+- Bump minimist from 1.2.5 to 1.2.6 (#31)
+
+## 2021-03-23
 
 ### Fixed
 - Updated Dependencies.
 
-## [2.0.2] - 2021-03-22
+## 2021-03-22
 
 ### Fixed
 - Updated Dependencies.
 
-## [2.0.2] - 2021-03-20
+## 2021-03-20
 
 ### Changed
 - Added Changelog.
@@ -22,7 +27,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ### Fixed
 - Updated Dependencies.
 
-## [2.0.1] - 2021-03-16
+## 2021-03-16
 
 ### Changed
 - Merged old repo into new one to reduce maintenance and increase visibility
@@ -31,13 +36,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ### Fixed
 - Updated Dependencies.
 
-## [2.0.0] - 2021-03-15
+## 2021-03-15
 
 ### Added
 - Cloned new Wordle container from [cwackerfuss/react-wordle](https://github.com/cwackerfuss/react-wordle).
 - Added GH-Pages.
   
-## [1.0.0] - 2021-02-08
+## 2021-02-08
  
 ### Added
 - Cloned original Wordle website (pre-NYT) and ported it to an Nginx container.
