@@ -3,13 +3,13 @@ on:
   pull_request:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
       - name: Prettify code
         uses: creyD/prettier_action@v4.2
         with:
