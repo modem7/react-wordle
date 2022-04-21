@@ -4,10 +4,20 @@ All notable changes to this project will be documented in this file.
  
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## 2021-04-21
+
+### Fixed
+- Bump node from 17.9.0-alpine3.15 to 18.0.0-alpine3.15 in /docker (https://github.com/modem7/react-wordle/pull/39)
+- Bump react and react-dom (https://github.com/modem7/react-wordle/pull/40)
+- Bump lint-staged from 12.3.7 to 12.4.0 (https://github.com/modem7/react-wordle/pull/41)
+- Bump @testing-library/user-event from 13.5.0 to 14.1.1 (https://github.com/modem7/react-wordle/pull/42)
+- Bump @testing-library/jest-dom from 5.16.2 to 5.16.4 (https://github.com/modem7/react-wordle/pull/43)
+- Bump @types/react from 17.0.41 to 18.0.5 (https://github.com/modem7/react-wordle/pull/44)
+
 ## 2021-04-06
 
 ### Fixed
-- Bump minimist from 1.2.5 to 1.2.6 (#31)
+- Bump minimist from 1.2.5 to 1.2.6 (https://github.com/modem7/react-wordle/pull/31)
 
 ## 2021-03-23
 
