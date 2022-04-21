@@ -1,4 +1,4 @@
-FROM node:17.9.0-alpine3.15 AS node_modules
+FROM node:18.0.0-alpine3.15 AS node_modules
 WORKDIR /app
 COPY package-lock.json package.json ./
 RUN npm install
