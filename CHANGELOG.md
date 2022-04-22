@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
  
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## 2021-04-22
+
+### Fixed
+- Bump @testing-library/react from 12.1.4 to 13.1.1 (https://github.com/modem7/react-wordle/pull/45)
+- Bump react-scripts from 5.0.0 to 5.0.1 (https://github.com/modem7/react-wordle/pull/46)
+- Bump prettier from 2.6.0 to 2.6.2 (https://github.com/modem7/react-wordle/pull/48)
+- Bump @types/node from 17.0.22 to 17.0.25 (https://github.com/modem7/react-wordle/pull/49)
+- Bump @types/react-dom from 17.0.14 to 18.0.2 (https://github.com/modem7/react-wordle/pull/50)
+
 ## 2021-04-21
 
 ### Fixed
@@ -57,7 +66,5 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ### Added
 - Cloned original Wordle website (pre-NYT) and ported it to an Nginx container.
   
-### Changed
-- Updated from Nginx 1.21.5 to 1.21.6.
-
 ### Fixed
+- Updated from Nginx 1.21.5 to 1.21.6.
