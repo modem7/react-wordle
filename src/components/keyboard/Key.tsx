@@ -1,8 +1,9 @@
 import { ReactNode } from 'react'
 import classnames from 'classnames'
 import { CharStatus } from '../../lib/statuses'
-import { MAX_WORD_LENGTH, REVEAL_TIME_MS } from '../../constants/settings'
+import { REVEAL_TIME_MS } from '../../constants/settings'
 import { getStoredIsHighContrastMode } from '../../lib/localStorage'
+import { solution } from '../../lib/words'
 
 type Props = {
   children?: ReactNode
@@ -21,7 +22,7 @@ export const Key = ({
   onClick,
   isRevealing,
 }: Props) => {
-  const keyDelayMs = REVEAL_TIME_MS * MAX_WORD_LENGTH
+  const keyDelayMs = REVEAL_TIME_MS * solution.length
   const isHighContrast = getStoredIsHighContrastMode()
 
   const classes = classnames(
@@ -54,7 +55,12 @@ export const Key = ({
   }
 
   return (
-    <button style={styles} className={classes} onClick={handleClick}>
+    <button
+      style={styles}
+      aria-label={`${value} ${status}`}
+      className={classes}
+      onClick={handleClick}
+    >
       {children || value}
     </button>
   )

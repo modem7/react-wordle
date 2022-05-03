@@ -25,3 +25,5 @@ export const TOTAL_TRIES_TEXT = 'Total tries'
 export const SUCCESS_RATE_TEXT = 'Success rate'
 export const CURRENT_STREAK_TEXT = 'Current streak'
 export const BEST_STREAK_TEXT = 'Best streak'
+export const DISCOURAGE_INAPP_BROWSER_TEXT =
+  "You are using an embedded browser and may experience problems sharing or saving your results. We encourage you rather to use your device's default browser."
