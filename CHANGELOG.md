@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
  
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## 2021-05-10
+
+### Fixed
+- Converted the modal close div to a button 
+
 ## 2021-05-05
 
 ### Fixed
