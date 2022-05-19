@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
  
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## 2021-05-19
+
+### Fixed
+- Bump node from 18.1.0-alpine3.15 to 18.2.0-alpine3.15
+
 ## 2021-05-10
 
 ### Fixed
