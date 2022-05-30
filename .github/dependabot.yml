@@ -8,6 +8,7 @@ updates:
     schedule:
       interval: "daily"
       timezone: "Europe/London"
+      time: "05:00"
     assignees:
       - "modem7"
     labels:
@@ -18,6 +19,7 @@ updates:
     schedule:
       interval: "daily"
       timezone: "Europe/London"
+      time: "05:00"
     assignees:
       - "modem7"
     labels:
@@ -28,6 +30,7 @@ updates:
     schedule:
       interval: "daily"
       timezone: "Europe/London"
+      time: "05:00"
     assignees:
       - "modem7"
     labels:
