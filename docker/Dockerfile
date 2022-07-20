@@ -10,7 +10,7 @@ FROM node_modules AS prod_builder
 RUN npm run build
 
 ## Production image
-FROM nginx:1.23.0-alpine AS prod
+FROM nginx:1.23.1-alpine AS prod
 COPY docker/etc/nginx/nginx.conf /etc/nginx/nginx.conf
 COPY docker/etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
 RUN mkdir /usr/share/nginx/html/react-wordle
