@@ -1,4 +1,4 @@
-# syntax = docker/dockerfile:1
+# syntax = docker/dockerfile:latest
 
 FROM node:18.7.0-alpine3.15 AS node_modules
 WORKDIR /app
