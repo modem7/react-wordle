@@ -40,6 +40,7 @@ import { AlertContainer } from './components/alerts/AlertContainer'
 import { useAlert } from './context/AlertContext'
 import { Navbar } from './components/navbar/Navbar'
 import { isInAppBrowser } from './lib/browser'
+import { MigrateStatsModal } from './components/modals/MigrateStatsModal'
 
 function App() {
   const prefersDarkMode = window.matchMedia(
@@ -52,6 +53,7 @@ function App() {
   const [isGameWon, setIsGameWon] = useState(false)
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false)
   const [isStatsModalOpen, setIsStatsModalOpen] = useState(false)
+  const [isMigrateStatsModalOpen, setIsMigrateStatsModalOpen] = useState(false)
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false)
   const [currentRowClass, setCurrentRowClass] = useState('')
   const [isGameLost, setIsGameLost] = useState(false)
@@ -288,10 +290,18 @@ function App() {
           isGameLost={isGameLost}
           isGameWon={isGameWon}
           handleShareToClipboard={() => showSuccessAlert(GAME_COPIED_MESSAGE)}
+          handleMigrateStatsButton={() => {
+            setIsStatsModalOpen(false)
+            setIsMigrateStatsModalOpen(true)
+          }}
           isHardMode={isHardMode}
           isDarkMode={isDarkMode}
           isHighContrastMode={isHighContrastMode}
           numberOfGuessesMade={guesses.length}
+        />
+        <MigrateStatsModal
+          isOpen={isMigrateStatsModalOpen}
+          handleClose={() => setIsMigrateStatsModalOpen(false)}
         />
         <SettingsModal
           isOpen={isSettingsModalOpen}

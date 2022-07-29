@@ -1,4 +1,5 @@
 import Countdown from 'react-countdown'
+import { ShareIcon } from '@heroicons/react/outline'
 import { StatBar } from '../stats/StatBar'
 import { Histogram } from '../stats/Histogram'
 import { GameStats } from '../../lib/localStorage'
@@ -11,6 +12,8 @@ import {
   NEW_WORD_TEXT,
   SHARE_TEXT,
 } from '../../constants/strings'
+import { MigrationIntro } from '../stats/MigrationIntro'
+import { ENABLE_MIGRATE_STATS } from '../../constants/settings'
 
 type Props = {
   isOpen: boolean
@@ -21,6 +24,7 @@ type Props = {
   isGameLost: boolean
   isGameWon: boolean
   handleShareToClipboard: () => void
+  handleMigrateStatsButton: () => void
   isHardMode: boolean
   isDarkMode: boolean
   isHighContrastMode: boolean
@@ -36,6 +40,7 @@ export const StatsModal = ({
   isGameLost,
   isGameWon,
   handleShareToClipboard,
+  handleMigrateStatsButton,
   isHardMode,
   isDarkMode,
   isHighContrastMode,
@@ -49,6 +54,9 @@ export const StatsModal = ({
         handleClose={handleClose}
       >
         <StatBar gameStats={gameStats} />
+        {ENABLE_MIGRATE_STATS && (
+          <MigrationIntro handleMigrateStatsButton={handleMigrateStatsButton} />
+        )}
       </BaseModal>
     )
   }
@@ -77,23 +85,32 @@ export const StatsModal = ({
               daysInHours={true}
             />
           </div>
-          <button
-            type="button"
-            className="mt-2 w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
-            onClick={() => {
-              shareStatus(
-                solution,
-                guesses,
-                isGameLost,
-                isHardMode,
-                isDarkMode,
-                isHighContrastMode,
-                handleShareToClipboard
-              )
-            }}
-          >
-            {SHARE_TEXT}
-          </button>
+          <div>
+            <button
+              type="button"
+              className="inline-flex justify-center items-center text-center mt-2 w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
+              onClick={() => {
+                shareStatus(
+                  solution,
+                  guesses,
+                  isGameLost,
+                  isHardMode,
+                  isDarkMode,
+                  isHighContrastMode,
+                  handleShareToClipboard
+                )
+              }}
+            >
+              <ShareIcon className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white" />
+              {SHARE_TEXT}
+            </button>
+          </div>
+        </div>
+      )}
+      {ENABLE_MIGRATE_STATS && (
+        <div>
+          <hr className="mt-4 -mb-4 border-gray-500" />
+          <MigrationIntro handleMigrateStatsButton={handleMigrateStatsButton} />
         </div>
       )}
     </BaseModal>

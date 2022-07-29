@@ -1,7 +1,7 @@
 const gameStateKey = 'gameState'
 const highContrastKey = 'highContrast'
 
-type StoredGameState = {
+export type StoredGameState = {
   guesses: string[]
   solution: string
 }
