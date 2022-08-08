@@ -3,7 +3,7 @@
   "assignees": ["modem7"],
   "labels": ["dependencies"],
   "includeForks": "true",
-  "ignoreDeps": ["npm"]
+  "ignoreDeps": ["npm"],
   "extends": [
     "config:base"
   ]
