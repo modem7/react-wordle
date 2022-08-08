@@ -4,6 +4,8 @@
   "assignees": ["modem7"],
   "labels": ["dependencies"],
   "includeForks": "true",
-  "npm.enabled": "false",
-  "timezone": ["Europe/London"]
+  "timezone": ["Europe/London"],
+  "npm": {
+    "enabled": false
+  }
 }
