@@ -1,6 +1,6 @@
 # syntax = docker/dockerfile:1
 
-FROM nginx:1.23.1-alpine
+FROM nginx:1.23.2-alpine
 
 COPY src/ /usr/share/nginx/html/
 COPY conf/nginx-site.conf /etc/nginx/conf.d/default.conf
