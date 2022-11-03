@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
 ### Fixed
 - Merged all files and changes from https://github.com/cwackerfuss
+- Reducing number of platforms that are built
 
 ## 2021-05-19
 
