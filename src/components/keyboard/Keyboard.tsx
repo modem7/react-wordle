@@ -1,8 +1,9 @@
-import { getStatuses } from '../../lib/statuses'
-import { Key } from './Key'
 import { useEffect } from 'react'
-import { ENTER_TEXT, DELETE_TEXT } from '../../constants/strings'
+
+import { DELETE_TEXT, ENTER_TEXT } from '../../constants/strings'
+import { getStatuses } from '../../lib/statuses'
 import { localeAwareUpperCase } from '../../lib/words'
+import { Key } from './Key'
 
 type Props = {
   onChar: (value: string) => void
@@ -55,7 +56,7 @@ export const Keyboard = ({
 
   return (
     <div>
-      <div className="flex justify-center mb-1">
+      <div className="mb-1 flex justify-center">
         {['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'].map((key) => (
           <Key
             value={key}
@@ -66,7 +67,7 @@ export const Keyboard = ({
           />
         ))}
       </div>
-      <div className="flex justify-center mb-1">
+      <div className="mb-1 flex justify-center">
         {['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'].map((key) => (
           <Key
             value={key}

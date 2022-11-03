@@ -1,5 +1,5 @@
-import { Alert } from './Alert'
 import { useAlert } from '../../context/AlertContext'
+import { Alert } from './Alert'
 
 export const AlertContainer = () => {
   const { message, status, isVisible } = useAlert()

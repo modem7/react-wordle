@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
  
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## 2022-11-03
+
+### Fixed
+- Merged all files and changes from https://github.com/cwackerfuss
+
 ## 2021-05-19
 
 ### Fixed

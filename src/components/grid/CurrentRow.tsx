@@ -1,5 +1,5 @@
-import { Cell } from './Cell'
 import { solution, unicodeSplit } from '../../lib/words'
+import { Cell } from './Cell'
 
 type Props = {
   guess: string

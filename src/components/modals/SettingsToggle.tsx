@@ -29,10 +29,10 @@ export const SettingsToggle = ({
   return (
     <>
       <div className="flex justify-between gap-4 py-3">
-        <div className="text-gray-500 dark:text-gray-300 mt-2 text-left">
+        <div className="mt-2 text-left text-gray-500 dark:text-gray-300">
           <p className="leading-none">{settingName}</p>
           {description && (
-            <p className="text-xs mt-1 text-gray-500 dark:text-gray-300">
+            <p className="mt-1 text-xs text-gray-500 dark:text-gray-300">
               {description}
             </p>
           )}

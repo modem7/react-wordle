@@ -18,9 +18,9 @@ export const Progress = ({
     { 'bg-blue-600': isCurrentDayStatRow, 'bg-gray-600': !isCurrentDayStatRow }
   )
   return (
-    <div className="flex justify-left m-1">
-      <div className="items-center justify-center w-2">{index + 1}</div>
-      <div className="w-full ml-2">
+    <div className="justify-left m-1 flex">
+      <div className="w-2 items-center justify-center">{index + 1}</div>
+      <div className="ml-2 w-full">
         <div style={{ width: `${8 + size}%` }} className={currentRowClass}>
           {label}
         </div>
